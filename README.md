@@ -8,7 +8,7 @@ A simple E-commerce website using Flask which uses Azure machine learning API to
 3. Sqlite
 4. Azure Machine Learning Studios
 
-## Factors considered while predicting delievry date ##
+## Factors considered while predicting delivery date ##
 1. Distance
 2. Sale On going
 3. Weather (next 5 days)
