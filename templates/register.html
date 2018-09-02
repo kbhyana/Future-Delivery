@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>Registration</title>
+<script type="text/javascript" src="{{ url_for('static', filename = 'js/validateForm.js') }}">
+
+
+</script>
+
+<link href="{{ url_for('static', filename='css/login.css') }}" rel="stylesheet" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+</head>
+<body>
+     <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Dell Hackathon</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Page 1</a></li>
+        <li><a href="#">Page 2</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li><a href="#">Profile ID:000001</a></li>
+      </ul>
+    </div>
+  </nav>
+<form action="/register" method="POST" onsubmit="return validate()">
+    <div class="login-page">
+  <div class="form">
+     <form class="login-form">
+    <p>Email: <input type="email" name="email"></p>
+
+    <P>Password: <input type="password" name="password" id="password" required></p>
+
+    <p>Confirm Password: <input type="password" name="cpassword" id="cpassword"></p>
+
+    <p>First Name: <input type="text" name="firstName"></p>
+    <p>Last Name: <input type="text" name="lastName"></p>
+    <p>Address Line 1: <input type="text" name="address1"></p>
+    <p>Address Line 2: <input type="text" name="address2"></p>
+    <p>Zipcode: <input type="text" name="zipcode"></p>
+    <p>City: <input type="text" name="city"></p>
+    <p>State: <input type="text" name="state"></p>
+    <p>Country: <input type="text" name="country"></p>
+    <p>Phone Number: <input type="text" name="phone"></p>
+
+    <p><input type="submit" value="Register"></p>
+
+    <a href="/loginForm">Login here</a>
+</form>
+</div>
+</div>
+</form>
+</body>
+</html>
